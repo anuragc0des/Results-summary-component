@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body .attribution {
+  margin-top: 40px;
+}
+
+.container {
+  width: 580px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 24px;
+}
+
+.container .left {
+  width: 50%;
+  background: hsl(241, 81%, 54%);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+  padding: 20px 30px;
+  border-radius: 24px;
+}
+
+.container .left .child-1 h3 {
+  font-size: 1rem;
+  color: hsl(241, 100%, 89%);
+}
+
+.container .left .child-2 {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(0, rgb(52, 30, 253), rgb(44, 1, 173));
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .left .child-2 p {
+  font-size: 12px;
+  color: hsl(241, 100%, 89%);
+}
+
+.container .left .child-2 p span {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.container .left .child-3 h3 {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.container .left .child-3 p {
+  font-size: 14px;
+  color: hsl(241, 100%, 89%);
+}
+
+.container .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px 30px;
+  border-radius: 0px 24px 24px 0px;
+}
+
+.container .right .child-4 h3 {
+  font-size: 1rem;
+}
+
+.container .right .child-5 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.container .right .child-5 .red {
+  background: hsl(0, 67%, 92%);
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.container .right .child-5 p {
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.container .right .child-5 .red .div,
+.orange .div,
+.green .div,
+.blue .div {
+  display: flex;
+}
+
+.container .right .child-5 .red p,
+.orange p,
+.green p,
+.blue p {
+  color: hsl(224, 30%, 27%);
+}
+
+.container .right .child-5 .red p span,
+.orange p span,
+.green p span,
+.blue p span {
+  color: black;
+}
+
+.container .right .child-5 .red .div p {
+  color: hsl(0, 100%, 67%);
+}
+
+.container .right .child-5 .red .div img,
+.orange .div img,
+.green .div img,
+.blue .div img {
+  margin-right: 4px;
+}
+
+.container .right .child-5 .orange {
+  background: hsl(37, 72%, 89%);
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.container .right .child-5 .orange .div p {
+  color: hsl(39, 100%, 56%);
+}
+
+.container .right .child-5 .green {
+  background: hsl(167, 78%, 91%);
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.container .right .child-5 .green .div p {
+  color: hsl(166, 100%, 37%);
+}
+
+.container .right .child-5 .blue {
+  background: hsl(235, 71%, 89%);
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.container .right .child-5 .blue .div p {
+  color: hsl(234, 85%, 45%);
+}
+
+.container .right .child-6 button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  outline: none;
+  background: hsl(224, 30%, 27%);
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 520px) {
+  .container {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .left {
+    width: 100%;
+    border-radius: 0px 0px 24px 24px;
+  }
+
+  .container .right {
+    width: 100%;
+  }
+}
